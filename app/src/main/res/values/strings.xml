@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FlightBargain</string>
+    <string name="from_airport">Departure from: %s</string>
+    <string name="direct">Direct</string>
+    <string name="stepovers">Stopovers: %d</string>
+    <string name="retry">Retry</string>
+    <string name="permission_denied">This app can\'t work without location permission - finishing</string>
 </resources>

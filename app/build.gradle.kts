@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-   // implementation(project(":core"))
+    implementation(project(":core"))
     implementation(Deps.appCompat)
     implementation(Deps.kotlinStdLib)
     implementation(Deps.constraintLayout)
@@ -46,6 +46,9 @@ dependencies {
     implementation(Deps.viewModelExtensions)
     implementation(Deps.ktxCore)
     implementation(Deps.rxBinding)
+    implementation(Deps.permissionDispatcher)
+    implementation(Deps.picasso)
+    kapt(Deps.permissionDispatcherProcessor)
     kapt(Deps.daggerAndroidCompiler)
     kapt(Deps.daggerCompiler)
     testImplementation(TestDeps.junit4)

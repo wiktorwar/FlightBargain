@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        >
+<androidx.constraintlayout.widget.ConstraintLayout
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.6"
+            android:adjustViewBounds="true"
+            tools:src="#A7A7A2"
+            />
+
+    <TextView
+            android:id="@+id/tv_date"
+            app:layout_constraintEnd_toEndOf="@id/image"
+            app:layout_constraintTop_toTopOf="@id/image"
+            android:background="#4D424141"
+            android:layout_margin="16dp"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="12.12.2019"/>
+
+    <TextView
+            android:id="@+id/tv_from_airport"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Krakow"/>
+    <TextView
+            android:id="@+id/tv_destination"
+            app:layout_constraintTop_toBottomOf="@id/tv_from_airport"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_price"
+            android:layout_margin="16dp"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="London"/>
+
+    <TextView
+            android:id="@+id/tv_price"
+            app:layout_constraintTop_toBottomOf="@id/tv_from_airport"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_destination"
+            android:layout_margin="16dp"
+            android:textStyle="bold"
+            android:gravity="end"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="350 Eur"
+            />
+
+    <TextView
+            android:id="@+id/tv_stopovers"
+            app:layout_constraintTop_toBottomOf="@id/tv_destination"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16dp"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/stepovers"
+            tools:visibility="gone"
+            />
+
+    <TextView
+            android:id="@+id/tv_direct"
+            android:text="@string/direct"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16dp"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="0dp"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:background="#66009688"
+            android:layout_height="wrap_content"
+            />
+
+    <TextView
+            android:id="@+id/tv_page"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="1/5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
