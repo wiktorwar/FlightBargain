@@ -25,6 +25,7 @@ object TestVer {
     const val espresso = "3.1.1"
     const val mockitoKotlin = "2.1.0"
     const val mockito = "3.0.0"
+    const val threeTen = "1.4.0"
 }
 
 object BuildPlugins {
@@ -81,4 +82,6 @@ object TestDeps {
     const val mockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:${TestVer.mockitoKotlin}"
     const val mockitoInline = "org.mockito:mockito-inline:${TestVer.mockito}"
     const val mockito = "org.mockito:mockito-core:${TestVer.mockito}"
+    const val threeTen= "org.threeten:threetenbp:${TestVer.threeTen}"
+
 }

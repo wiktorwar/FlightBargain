@@ -55,6 +55,7 @@ dependencies {
     testImplementation(TestDeps.mockito)
     testImplementation(TestDeps.mockitoKotlin)
     testImplementation(TestDeps.mockitoInline)
+    testImplementation(TestDeps.threeTen)
     androidTestImplementation(TestDeps.testRunner)
     androidTestImplementation(TestDeps.espresso)
 }
