@@ -1,11 +1,8 @@
 plugins {
     id(BuildPlugins.androidLibrary)
     id(BuildPlugins.kotlinAndroid)
-    id(BuildPlugins.kotlinAndroidExtensions)
     id(BuildPlugins.kotlinKapt)
 }
-androidExtensions { isExperimental = true }
-
 android {
     compileSdkVersion(AndroidSdk.compile)
     defaultConfig {
@@ -24,9 +21,18 @@ android {
 }
 
 dependencies {
+    api(project(":model"))
     implementation(Deps.kotlinStdLib)
     implementation(Deps.rxjava)
-    api(Deps.threeTenAbp)
-    implementation(Deps.moshiKotlin)
-    kapt(Deps.moshiKotlinCodegen)
+    implementation(Deps.rxAndroid)
+    implementation(Deps.timber)
+    implementation(Deps.dagger)
+    implementation(Deps.moshiConverterForRetrofit)
+    api(Deps.retrofit)
+    api(Deps.retrofitRxJavaAdapter)
+    kapt(Deps.daggerAndroidCompiler)
+    kapt(Deps.daggerCompiler)
+    testImplementation(TestDeps.junit4)
+    androidTestImplementation(TestDeps.testRunner)
+    androidTestImplementation(TestDeps.espresso)
 }

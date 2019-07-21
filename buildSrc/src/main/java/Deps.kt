@@ -12,12 +12,11 @@ object Ver {
     const val constraintLayout = "1.1.3"
     const val viewModel = "2.0.0"
     const val threeTenAbp = "1.2.1"
-    const val firebaseAuth = "18.0.0"
-    const val firebaseFirestore = "20.1.0"
-    const val rxFirebase = "1.5.7"
     const val timber = "4.7.1"
     const val rxBinding = "3.0.0-alpha2"
     const val retrofit = "2.6.0"
+    const val picasso  = "2.71828"
+    const val permissionDispatcher = "4.5.0"
 }
 
 object TestVer {
@@ -63,14 +62,15 @@ object Deps {
     const val moshiKotlin = "com.squareup.moshi:moshi-kotlin:${Ver.moshi}"
 
     const val threeTenAbp = "com.jakewharton.threetenabp:threetenabp:${Ver.threeTenAbp}"
-    const val firebaseAuth = "com.google.firebase:firebase-auth:${Ver.firebaseAuth}"
-    const val firebaseFirestore = "com.google.firebase:firebase-firestore:${Ver.firebaseFirestore}"
-    const val rxFirebase = "com.github.FrangSierra:RxFirebase:${Ver.rxFirebase}"
     const val rxBinding = "com.jakewharton.rxbinding3:rxbinding-core:${Ver.rxBinding}"
     const val timber = "com.jakewharton.timber:timber:${Ver.timber}"
     const val androidMaterial = "com.google.android.material:material:${Ver.androidMaterial}"
     const val retrofit = "com.squareup.retrofit2:retrofit:${Ver.retrofit}"
     const val retrofitRxJavaAdapter = "com.squareup.retrofit2:adapter-rxjava2:${Ver.retrofit}"
+    const val permissionDispatcher =  "org.permissionsdispatcher:permissionsdispatcher:${Ver.permissionDispatcher}"
+    const val permissionDispatcherProcessor =  "org.permissionsdispatcher:permissionsdispatcher-processor:${Ver.permissionDispatcher}"
+    const val picasso = "com.squareup.picasso:picasso:${Ver.picasso}"
+
 }
 
 
