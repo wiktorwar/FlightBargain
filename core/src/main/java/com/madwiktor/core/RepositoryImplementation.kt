@@ -88,7 +88,7 @@ class RepositoryImplementation(
                 else -> {
                     val lastLatLong = LatLong(lastLat, lastLong)
                     val distance = distanceCalculator(Pair(forLocation, lastLatLong))
-                    if (distance < forLocation.toleranceKm)
+                    if (distance < (forLocation.toleranceKm*1000))
                         savedValuesForTheDate
                     else
                         emptySet()
